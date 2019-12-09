@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.tnc-contianer{
+    padding: 0 10px;
+}
+.tnc-title{
+    margin: 20px 0;
+    font-size: 15px;
+}
+.tnc-details {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Fire alarm</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="stylesheet" href="./resources/css/main(Kishor).css">
+</head>
+
+<body>
+  <ion-app>
+    <!-- Menu Start -->
+    <ion-menu side="start" class="fa-menu">
+      <ion-header>
+        <ion-toolbar class="fa-sidebar-toolbar">
+
+          <ion-title class="fa-title-sidebar">
+            <div class="fa-user-image-container">
+              <img class="fa-user-image" src="./resources/img/firealarm logo.png" alt="fire alarm">
+            </div>
+            <span class="fa-username">Kishor</span>
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <div class="fa-sidebar-list-header">Your activity</div>
+          <ion-item no-padding>
+            <ul class="fa-sidebar-ul">
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/recent_icon.png" alt="recent_incident">
+                  <div class="fa-sidebar-list-text"> Recent
+                    Incident</div>
+                </button></li>
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/tips2_icon.png" alt="tips">
+                  <div class="fa-sidebar-list-text"> Tips and Tricks</div>
+                </button></li>
+            </ul>
+          </ion-item>
+          <div class="fa-sidebar-list-header">Useful</div>
+          <ion-item no-padding>
+            <ul class="fa-sidebar-ul">
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/fire_icon.png" alt="fire">
+                  <div class="fa-sidebar-list-text">Fire Service (BD)</div>
+                </button></li>
+            </ul>
+          </ion-item>
+          <ion-item no-padding>
+            <ul class="fa-sidebar-ul">
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/terms_icon.png" alt="Terms and Conditions">
+                  <div class="fa-sidebar-list-text">Terms and Conditions</div>
+                </button></li>
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/privacy_icon.png" alt="Privacy Policy">
+                  <div class="fa-sidebar-list-text">Privacy Policy</div>
+                </button></li>
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/info_icon.png" alt="About Us">
+                  <div class="fa-sidebar-list-text">About Us</div>
+                </button></li>
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button button-alert"><img
+                    class="fa-sidebar-list-icon" src="./resources/img/feedback_icon.png" alt="Feedback">
+                  <div class="fa-sidebar-list-text">Feedback</div>
+                </button></li>
+              <li class="fa-sidebar-list"><button class="fa-sidebar-list-button"><img class="fa-sidebar-list-icon"
+                    src="./resources/img/logout2_icon.png" alt="Logout">
+                  <div class="fa-sidebar-list-text">Logout</div>
+                </button></li>
+            </ul>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <!-- Menu End -->
+    <!-- Main Body Start -->
+    <div class="ion-page" main>
+      <!-- Main Toolbar Start -->
+      <ion-header class="fa-title">
+        <ion-toolbar class="fa-main-toolbar">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Fire Alarm</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <!-- Main Toolbar End -->
+
+      <!-- App Body Start -->
+      <ion-content class="fa-main-body">
+        <ion-grid>
+          <ion-row>
+
+            <!-- Language Selector Start -->
+            <ion-col size-xs="4" size-sm="2" size-md="2" size-lg="2" size-xl="2" offset-xs="8" offset-sm="10"
+              offset-md="10" offest-lg="10" offset-xl="10">
+              <div class="fa-language-selector-container">
+                <span class="fa-language-header">Language</span>
+                <div class="fa-language-select">
+                  <span class="fa-language-value-1">Ban</span>
+                  <ion-item no-padding no-lines class="fa-language-selector-body">
+                    <ion-toggle class="fa-toggle" slot="end" value="value" checked></ion-toggle>
+                  </ion-item>
+                  <span class="fa-language-value-2">Eng</span>
+                </div>
+              </div>
+            </ion-col>
+            <!-- Language Selector End -->
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size-lg="6" offset-lg="3" size-md="12">
+              <div class="text-boxt-container">
+
+                <input type="text" placeholder="Incident type" class="fire-input-type">
+
+              </div>
+
+              <div class="text-boxt-container">
+                <ion-textarea no-padding rows="6" cols="20" class="fire-input-description"
+                  placeholder="Severity level/description">
+                </ion-textarea>
+              </div>
+
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div class="special-atn-txt">
+          <p>Note:</p>
+          <p class="prank-atn">***Please do not use it for pranks***</p>
+        </div>
+        <div class="button-container">
+          <button class="btn-fire-alarm">
+            <div class="btn-circle-img">
+              <img src="./resources/img/one.png" alt="button">
+            </div>
+            <div class="btn-circle-green">
+
+            </div>
+            <div class="btn-circle-blue">
+
+            </div>
+            <div class="btn-circle-img-3">
+
+            </div>
+            <div class="btn-circle-img-4">
+              <img src="./resources/img/two.png" alt="button">
+              <div class="img-container">
+
+                <img src="./resources/img/fire_s16.png" alt="fire">
+                <span class="alarm-txt">Alarm</span>
+              </div>
+            </div>
+          </button>
+        </div>
+        <!-- fire alarm button  -->
+
+
+        <!-- End alarm button  -->
+        <!-- share button bottom -->
+
+
+        <ion-fab vertical="bottom" horizontal="start" class="footer-logo-bg">
+          <ion-fab-button class="footer-logo-bg">
+            <div class="footer-logo">
+              <img src="./resources/img/cst_logo.png" alt="CST logo">
+            </div>
+
+          </ion-fab-button>
+        </ion-fab>
+
+
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="footer-share-bg">
+          <ion-fab-button class="footer-share-bg">
+            <ion-icon name="share"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+
+
+
+
+        <!-- end share button bottom -->
+      </ion-content>
+
+      <!-- App Body End -->
+    </div>
+    <!-- Main Body End -->
+  </ion-app>
+  <!-- App End -->
+
+</body>
+
+</html>

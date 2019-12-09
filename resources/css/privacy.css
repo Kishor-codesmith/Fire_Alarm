@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.p-policy-contianer{
+    padding: 0 10px;
+}
+.p-policy-title{
+    margin: 20px 0;
+    font-size: 15px;
+}
+.p-policy-details {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    
+}

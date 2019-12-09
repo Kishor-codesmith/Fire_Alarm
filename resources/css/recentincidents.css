@@ -1,0 +1,22 @@
+.incidents-box{
+    border: 2px solid #F76C28;
+    padding: 10px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+    background: rgba(231, 231, 231, 0.671);
+    background: linear-gradient(to top,rgba(153, 153, 153, 0.24),#efefef,rgba(153, 153, 153, 0.24));
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px #777;
+}
+.incidents-box .incident-type{
+    color: #F76C28;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.incident-details .incident-place{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.incident-details .incident-status{
+    font-size: 15px;
+}
